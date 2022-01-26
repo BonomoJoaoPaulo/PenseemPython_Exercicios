@@ -1,0 +1,4 @@
+
+Resolução do próprio Allen Downey:
+https://github.com/AllenDowney/ThinkPython2/blob/master/code/letters.py
+
