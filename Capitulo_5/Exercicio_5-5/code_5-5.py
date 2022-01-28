@@ -1,0 +1,25 @@
+from multiprocessing.connection import wait
+from tracemalloc import stop
+import turtle
+
+def draw(t, length, n):
+    if n == 0:
+        return
+    angle = 50
+    t.fd(length * n)
+    t.lt(angle)
+    draw(t, length, n-1)
+    t.rt(2 * angle)
+    draw(t, length, n-1)
+    t.lt(angle)
+    t.bk(length * n)
+
+
+bob = turtle.Turtle()
+comprimento = 20
+num = 4
+
+draw(bob, comprimento, num)
+
+# A função é recursiva e aparentemente desenha uma árvore.
+# Não entendi muito bem o desenho.
